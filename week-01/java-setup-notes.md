@@ -1,49 +1,44 @@
 # Java Development Environment Setup
 
 ## Tools Installed
-
-| Tool | Version |
-|------|---------|
-| Oracle JDK | 17.0.12 |
-| IntelliJ IDEA Community Edition | Latest |
+- **Oracle JDK** — 17.0.12
+- **IntelliJ IDEA** — Community Edition
 
 ## Key Concepts
 
-| Acronym | Meaning | Purpose |
-|---------|---------|---------|
-| JDK | Java Development Kit | JRE + JVM + Dev Tools |
-| JRE | Java Runtime Environment | Just runs Java (end users) |
-| JVM | Java Virtual Machine | Executes bytecode |
-| JAR | Java Archive | Packaged Java application |
+**The Acronyms:**
+- **JDK** = Java Development Kit (JRE + JVM + Dev Tools) — everything you need to develop
+- **JRE** = Java Runtime Environment — just runs Java (for end users)
+- **JVM** = Java Virtual Machine — the engine that executes bytecode
+- **JAR** = Java Archive — packaged, shareable Java application
 
-| Tool | Purpose |
-|------|---------|
-| `javac` | Compiler (write → bytecode) |
-| `java` | Runner (bytecode → output) |
-| Maven/Gradle | Build tools |
+**The Tools:**
+- **javac** = compiler (turns .java into .class bytecode)
+- **java** = runner (executes bytecode on the JVM)
+- **Maven/Gradle** = build tools (manage dependencies and automate builds)
 
 ## The Flow
 
 ```
-Write .java → javac → .class (bytecode) → java/JVM → Output
+Write .java → javac compile → .class bytecode → java/JVM run → Output
 ```
 
 ## Key Commands
 
-| Command | Purpose |
-|---------|---------|
-| `java -version` | Check Java runtime version |
-| `javac -version` | Check compiler version |
+```bash
+java -version      # Check Java runtime version
+javac -version     # Check compiler version
+```
 
 ## Edition Types
 
-- **Java SE** = Standard Edition (what we use)
-- **Jakarta EE** = Enterprise Edition (builds on top of SE)
+- **Java SE** = Standard Edition (what we use for most development)
+- **Jakarta EE** = Enterprise Edition (built on top of SE, for large-scale apps)
 
-## Important Configuration
+## ⚠️ Important
 
-⚠️ IntelliJ must be configured to use JDK 17, not the bundled JDK
+IntelliJ must be configured to use JDK 17, not the bundled JDK that comes with IntelliJ.
 
-## Summary
+## One-Liner Summary
 
-> "JDK lets you write, compile and run Java. IntelliJ makes you productive. JAR files let you share your app anywhere Java is installed."
+> JDK lets you write, compile and run Java. IntelliJ makes you productive. JAR files let you share your app anywhere Java is installed.
