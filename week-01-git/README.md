@@ -1,8 +1,9 @@
 # Week 1 - Git Fundamentals
 
-✅ Git Module — OFFICIALLY DONE!
- 
- Git Module — OFFICIALLY DONE!
+✅ **Git Module — OFFICIALLY DONE!**
+
+## Core Git Commands
+
 ✅ git init              → initialize repo                                
 ✅ git config            → setup identity
 ✅ git status / -s       → check state
@@ -19,23 +20,17 @@
 ✅ git reset             → undo commits
 ✅ git clone             → copy remote repo
 
+## Remote Repository Commands
 
-//Additional
-# 1. Download changes from GitHub without merging
-git fetch
+✅ git fetch             → download changes without merging
+✅ git pull              → download AND merge changes (fetch + merge)
+✅ git push              → send commits to GitHub
+✅ git push -u origin [branch]  → push new branch to GitHub
+✅ git remote -v         → see all remote connections
 
-# 2. Download AND merge changes (fetch + merge in one)
-git pull
+## Workflow Example
 
-# 3. Send your commits to GitHub
-git push
-
-# 4. Push a NEW branch to GitHub for the first time
-git push -u origin feature-login
-
-# 5. See all remote connections
-git remote -v
-
+```bash
 git checkout -b feature-login    # create branch
 # write code...
 git add .                        # stage
@@ -44,3 +39,4 @@ git push -u origin feature-login # push to GitHub
 # create Pull Request on GitHub
 # get reviewed and approved
 # merge to master ✅
+```
