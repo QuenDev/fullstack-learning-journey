@@ -19,9 +19,9 @@ abstract class LibraryItem {
     }
 
 
-    public String getTitle() { return title;}
+    public String getTitle() { return title; }
     public String getAuthor() { return author; }
-    public int getId() {return id;};
+    public int getId() { return id; };
 
 
     public void borrowItem(String borrowerName) {
@@ -208,7 +208,7 @@ public class ChallengeOOP {
             }
         }
 
-        // Return item
+        // Return item  
         System.out.println("\n=== RETURNING ITEMS ===");
         items[0].returnItem();
         System.out.println("Is Clean Code available? "
