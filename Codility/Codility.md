@@ -1,4 +1,4 @@
-# Codility Problems — Complete Study Guide
+# Codility Problems 
 
 ---
 
